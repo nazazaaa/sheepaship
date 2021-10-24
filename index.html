@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Roboto+Condensed:wght@300;400;700&family=Unna:wght@400;700&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/img/web-logo.png" />
+    <title>sheepaship</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#"><img src="/img/logo.png" alt="" /></a>
+      </div>
+
+      <div class="bas">
+        <div class="dropdown">
+          <button class="dropbtn">
+            KZT <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">KZT</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu" id="menu">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <a href="#">HOME</a>
+        <a href="/shop.html">SHOP</a>
+        <a href="/about.html">ABOUT US</a>
+        <div class="head-icons">
+          <a href="link.html" target="_blank"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+          <a href="link.html" target="_blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="link.html" target="_blank"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a href="link.html" target="_blank"
+            ><i class="fab fa-pinterest-square"></i
+          ></a>
+          <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"
+            ><i class="fab fa-youtube-square"></i
+          ></a>
+        </div>
+      </div>
+
+      <i class="fas fa-bars" id="bars" onclick="showMenu()"></i>
+
+      <div class="quote">
+        <img src="/img/quote.png" alt="" />
+      </div>
+
+      <div class="shop-btn">
+        <form action="/shop.html">
+          <button type="submit" value="Go to Shop">SHOP NOW</button>
+        </form>
+      </div>
+    </header>
+
+    <div class="seredina">
+      <div class="txt1">
+        <h4>Free Shipping</h4>
+        <br />
+        <p>
+          Free shipping on all orders over $100 in the USA,<br />
+          Canada, the EU, UK + Australia.
+        </p>
+      </div>
+      <div class="txt2">
+        <h4>Free Exchanges + Easy Returns</h4>
+        <br />
+        <p>
+          Exchanges are on us, as many times you need to get <br />
+          the fit just right!
+        </p>
+      </div>
+      <div class="txt3">
+        <h4>Pay in 4 Easy Installments</h4>
+        <br />
+        <p>
+          Choose Klarna at checkout to pay in 4 interest-free
+          <br />installments.
+        </p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="posle-serediny">
+      <div class="about-blog">
+        <p>#NOTTODAY</p>
+        <h3>OUR PRETTY SHEEPS</h3>
+        <form action="/blog.html">
+          <button type="submit" value="Go to Blog">SHOW OUR BLOG</button>
+        </form>
+      </div>
+      <div class="about-types">
+        <p>KNOW YOUR SHEEP</p>
+        <h3>SHEEP BREEDS WE HAVE</h3>
+        <form action="/shop.html">
+          <button type="submit" value="Go to Shop">I WANNA SEE</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="from-usa">
+      <h2>FROM USA</h2>
+
+      <div class="items">
+        <div class="item">
+          <div
+            class="item-photo"
+            style="background-image: url(/img/sheeps/katahdin.jpg)"
+          ></div>
+          <h3>Katahdin Sheep</h3>
+          <p><span>&#8376;</span> 424,999</p>
+          <button>to the cart</button>
+        </div>
+        <div class="item">
+          <div
+            class="item-photo"
+            style="
+              background-image: url(/img/sheeps/brecknock-hill-cheviot-sheep.jpg);
+            "
+          ></div>
+          <h3>American Brecknock Sheep</h3>
+          <p><span>&#8376;</span> 169,999</p>
+          <button>to the cart</button>
+        </div>
+        <div class="item">
+          <div
+            class="item-photo"
+            style="background-image: url(/img/sheeps/ColumbiaSheep.jpg)"
+          ></div>
+          <h3>Columbia Sheep</h3>
+          <p><span>&#8376;</span> 169,999</p>
+          <button>to the cart</button>
+        </div>
+      </div>
+
+      <hr
+        style="
+          display: block;
+          height: 1px;
+          border: 0;
+          border-top: 1px solid #ccc;
+          margin: 1em 0;
+          padding: 0;
+        "
+      />
+    </div>
+
+    <div class="product">
+      <div class="product-text">
+        <h3>"ҚОЙ" consists of <br />everything you need for life<br /></h3>
+
+        <img src="/img/meat.png" alt="meat" />
+
+        <p>
+          <b>"Ет" - meat</b>.<br />
+          As a source of protein, meat protein is the second largest component
+          after the water one. Muscle protein is divided into 3 groups based on
+          their solubility properties; firstly, sarcoplasmic protein (30%),
+          myofibril protein (55%) and stromal protein or muscle tissue (15%).
+        </p>
+
+        <img src="/img/wool.png" alt="wool" />
+
+        <p id="last-p">
+          <b>"Жүн" - fur</b>.<br />
+          They secrete lanolin from their skin and it works through the wool
+          making it pretty much waterproof, so they don’t care that much about
+          keeping out of the rain. Wool is more curly and thick than the hair
+          you find on a horse or a cow. Longer too but since it is so curly that
+          isn’t always immediately obvious.
+        </p>
+
+        <img src="/img/heart.png" alt="heart" />
+
+        <p id="last-p">
+          <b>"Махаббат" - love</b>.<br />
+          Sheep have had a strong presence in many cultures, especially in areas
+          where they form the most common type of livestock. In the English
+          language, to call someone a sheep or ovine may allude that they are
+          timid and easily led.[167] In contradiction to this image, male sheep
+          are often used as symbols of virility and power.
+        </p>
+      </div>
+
+      <div class="product-photo">
+        <img src="/img/product-photo.jpg" alt="" />
+      </div>
+    </div>
+
+    <hr
+      id="sec-hr"
+      style="
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+      "
+    />
+
+    <h2
+      id="what"
+      style="
+        margin-top: 35px;
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: 22px;
+        text-align: center;
+      "
+    >
+      What our customers are saying...
+    </h2>
+
+    <div class="reviews">
+      <div class="review">
+        <i class="fas fa-quote-right"></i>
+        <p>
+          "The best sheeps I've ever purchased. The meat is amazing. My family
+          just loved it!"
+        </p>
+        <br />
+        <h5>Jack B.</h5>
+      </div>
+      <div class="review">
+        <i class="fas fa-quote-right"></i>
+        <p>
+          "Sheepaship knows its shit. Keep on doing the good work. One of my
+          favourite farms."
+        </p>
+        <br />
+        <h5>Paul M.</h5>
+      </div>
+      <div class="review">
+        <i class="fas fa-quote-right"></i>
+        <p>
+          "I've purchased a little one for my kids. We called him Anna after our
+          grandma. R.I.P."
+        </p>
+        <br />
+        <h5>Sasha S.</h5>
+      </div>
+    </div>
+
+    <footer>
+      <img src="/img/logo.png" alt="" />
+
+      <div class="foot-list">
+        <a href="index.html">HOME</a>
+        <a href="shop.html">SHOP</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="">BLOG</a>
+        <a href="">CONTACT US</a>
+      </div>
+
+      <p class="history">
+        We crave only good keeping and love. No cheating, no hating. Good vibes
+        only. No tolerance for stealing niggas and lazy bitches.
+        <br />
+        <br />
+        With Love and Caring.
+      </p>
+
+      <div class="icons">
+        <a href="link.html" target="_blank"
+          ><i class="fab fa-instagram-square"></i
+        ></a>
+        <a href="link.html" target="_blank"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a href="link.html" target="_blank"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+        <a href="link.html" target="_blank"
+          ><i class="fab fa-pinterest-square"></i
+        ></a>
+        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"
+          ><i class="fab fa-youtube-square"></i
+        ></a>
+      </div>
+
+      <hr
+        style="
+          height: 1px;
+          border: 0;
+          border-top: 2px white solid;
+          width: 88%;
+          margin: 28px 0 0px 6%;
+        "
+      />
+
+      <div class="konec">
+        <p id="bir">
+          &copy; sheepaship <br />
+          with love and caring.
+        </p>
+
+        <hr />
+        <p id="eki">
+          We Are sheepaship. <br />
+          Made in Aktau, Qazaqstan.
+        </p>
+
+        <hr />
+        <p id="ush">
+          2010 <br />
+          for web programming project
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      var Menu = document.getElementById("menu");
+
+      function showMenu() {
+        Menu.style.right = "0";
+      }
+
+      function hideMenu() {
+        Menu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

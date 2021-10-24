@@ -1,0 +1,464 @@
+* {
+  font-family: "Jost";
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---- header ---- */
+
+.little-line {
+  width: 100%;
+  height: 5px;
+  background-color: rgb(212, 208, 203);
+}
+
+.header {
+  width: 100%;
+  height: 92px;
+  background-color: rgb(243, 241, 237);
+}
+
+.header img {
+  width: 200px;
+  position: absolute;
+  margin: 21px 0 0 200px;
+}
+
+.h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.h1 h1 {
+  font-family: "Oswald";
+}
+
+.list {
+  text-align: center;
+  padding-top: 35px;
+}
+
+.list a {
+  padding: 0 20px;
+  text-decoration: none;
+  color: rgb(136, 134, 130);
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 300;
+  transition: 0.2s;
+}
+
+.list a:hover {
+  color: rgb(73, 72, 71);
+}
+
+.header nav .fas {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .header {
+    height: 50px;
+  }
+
+  .header img {
+    margin: 9px 0 0 10px;
+    width: 110px;
+  }
+
+  .h1 {
+    margin: 20px 0;
+  }
+
+  .h1 h1 {
+    font-size: 25px;
+  }
+
+  .list {
+    position: absolute;
+    background: rgb(212, 208, 203);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  .list a {
+    display: block;
+    text-align: end;
+    line-height: 30px;
+  }
+
+  .header nav .fas {
+    display: block;
+    margin-left: 20px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .fa-shopping-cart {
+    padding-top: 30px;
+  }
+
+  .countries {
+    width: 100%;
+    background-color: #99d98c;
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+
+/* ---- body ---- */
+
+.body {
+  width: 78%;
+  margin: auto;
+}
+
+#country {
+  display: none;
+}
+
+.countries {
+  width: 100%;
+  border-top: 1px solid rgb(223, 218, 213);
+  border-bottom: 1px solid rgb(240, 235, 230);
+}
+
+.countries div {
+  display: flex;
+  align-items: center;
+}
+
+.countries {
+  display: inline-flex;
+}
+
+.countries p {
+  color: rgb(224, 220, 215);
+  font-size: 8.5px;
+  font-weight: 300;
+  padding: 5px 18px 5px 0;
+}
+
+.countries div {
+  height: 100%;
+}
+
+.btn {
+  margin: 5px 5px 0 5px;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 5px 8px;
+}
+
+.btn.active {
+  background-color: #82c574;
+  color: white;
+}
+
+.btn.active:hover {
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #82c574;
+}
+
+.container {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.filterDiv {
+  width: 250px;
+  height: auto;
+  margin-top: 50px;
+}
+
+.filterDiv h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(83, 83, 83);
+}
+
+.filterDiv h4 {
+  font-weight: 300;
+  font-size: 13px;
+  font-family: "Unna";
+  color: rgba(0, 0, 0, 0.418);
+}
+
+.filterDiv p {
+  color: rgba(0, 0, 0, 0.39);
+}
+
+.filterDiv button {
+  margin-left: 90px;
+  background-color: white;
+  border: 2px solid #e76f51;
+}
+
+.filterDiv button:hover {
+  background: #e76f51;
+  color: white;
+  transition: 0.1s;
+}
+
+.img {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+}
+
+.show {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .countries {
+    width: 100%;
+    height: 50px;
+    overflow: auto;
+  }
+
+  .countries p {
+    padding: 10px 3px 0 3px;
+    color: white;
+  }
+
+  .btn {
+    font-size: 10px;
+    margin-top: 0;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .filterDiv {
+    width: 130px;
+  }
+
+  .img {
+    height: 130px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .filterDiv h3 {
+    font-size: 10px;
+  }
+
+  .filterDiv h4 {
+    font-size: 13px;
+  }
+
+  .filterDiv p {
+    font-size: 10px;
+  }
+
+  .filterDiv button {
+    margin-left: 0;
+    background-color: #e76f51;
+    color: white;
+  }
+}
+
+/* ---- footer ---- */
+
+footer {
+  width: 100%;
+  height: 450px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/img/fur.jpg);
+  background-size: 100%;
+  margin-top: 50px;
+  box-shadow: 0px 10px 50px black inset;
+}
+
+footer img {
+  width: 150px;
+  padding: 105px 0 0 200px;
+  float: left;
+}
+
+.foot-list {
+  display: flex;
+  flex-direction: column;
+  padding: 75px 0 0 145px;
+  float: left;
+}
+
+.foot-list a {
+  text-decoration: none;
+  color: white;
+  padding: 7px;
+  font-size: 12px;
+  font-family: "Jost";
+}
+
+.foot-list a:hover {
+  color: #ddd;
+}
+
+.history {
+  color: white;
+  font-family: "Jost";
+  font-size: 12px;
+  text-transform: uppercase;
+  max-width: 400px;
+  text-align: center;
+  padding: 100px;
+  padding-left: 800px;
+}
+
+.icons {
+  display: inline-flex;
+  padding-right: 243px;
+  float: right;
+}
+
+.icons a {
+  color: white;
+  padding: 13px;
+}
+
+.icons i {
+  font-size: 19px;
+}
+
+.konec {
+  display: inline-flex;
+}
+
+.konec p {
+  color: white;
+  font-family: "Roboto Condensed";
+  font-weight: 200;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.konec hr {
+  height: 27px;
+  border: 0;
+  border-right: 2px solid white;
+  margin-top: 27px;
+}
+
+#bir {
+  padding: 27px 207px 0 83px;
+}
+
+#eki {
+  padding: 27px 150px;
+  text-align: center;
+}
+
+#ush {
+  padding: 27px 0 0 210px;
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  footer {
+    height: auto;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.562) inset;
+  }
+
+  footer img {
+    width: 65px;
+    padding: 50px 0 50px 30px;
+  }
+
+  .foot-list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 20px;
+    float: left;
+  }
+
+  .foot-list a {
+    text-decoration: none;
+    padding: 4px;
+    font-size: 8px;
+  }
+
+  .history {
+    font-size: 8px;
+    max-width: 400px;
+    text-align: center;
+    padding: 10px;
+    padding-left: 200px;
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.664);
+  }
+
+  .icons {
+    padding: 0;
+    float: right;
+    padding-right: 20px;
+  }
+
+  .icons a {
+    color: rgba(255, 255, 255, 0.726);
+    padding: 8px;
+  }
+
+  .icons i {
+    font-size: 10px;
+  }
+
+  .konec {
+    width: 200px;
+    height: 35px;
+    padding: 0;
+  }
+
+  .konec p {
+    font-weight: 200;
+    font-size: 5px;
+    text-transform: uppercase;
+    padding: 0;
+    min-width: 71px;
+  }
+
+  .konec hr {
+    height: 14px;
+    border-right: 1px solid white;
+    margin: 0;
+    margin-top: 9px;
+  }
+
+  #bir {
+    padding: 10px 24px 0 22px;
+  }
+
+  #eki {
+    padding: 10px 24px 0 24px;
+    text-align: center;
+  }
+
+  #ush {
+    padding: 10px 0px 0 24px;
+    text-align: right;
+  }
+}

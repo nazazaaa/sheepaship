@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sheepaship - about us</title>
+    <link rel="stylesheet" href="/about-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Roboto+Condensed:wght@300;400;700&family=Unna:wght@400;700&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/img/web-logo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="little-line"></div>
+      <div class="header">
+        <img src="/img/header-logo.png" alt="" />
+        <nav>
+          <div class="list" id="list">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <a href="index.html">HOME</a>
+            <a href="shop.html">SHOP</a>
+            <a href="about.html">ABOUT US</a>
+            <a href=""><i class="fas fa-shopping-cart"></i></a>
+          </div>
+          <i
+            class="fas fa-bars"
+            onclick="showMenu()"
+            style="padding: 13px 0 0 295px"
+          ></i>
+        </nav>
+      </div>
+    </header>
+
+    <h1>What makes SHEEPASHIP <b>different</b>?</h1>
+
+    <div class="body">
+      <div class="text-box">
+        <div class="text">
+          <h2 style="color: #f28482">- Our Mission -</h2>
+          <p>To raise the best sheeps for people with a lot of cash.</p>
+          <h2 style="color: #4f772d">About</h2>
+          <p>
+            Our team started in the sheep keeping industry. After a few years,
+            we discovered there were too many challenges to keeping them.
+            Traditional sheep keeping techniques were complicated and expensive
+            to manage. Seeing a need for simplicity, sheepaship oline sheep
+            selling store was born. We wanted to offer an oline sheep store that
+            would require no sheep keeping skills or housing experience, with
+            everything needed to get published online. You can simply focus on
+            creating an amazing dishes or clothes thet will satisfy your
+            requirements. After seeing an increased need for ecommerce
+            solutions, we developed one of the only fully-featured, free and
+            commission-free online store builders. As our global userbase grew,
+            we expanded our hardsman with the ability to house more breeds of
+            sheep.
+          </p>
+        </div>
+      </div>
+      <div class="photo"></div>
+    </div>
+
+    <footer>
+      <img src="/img/logo.png" alt="" />
+
+      <div class="foot-list">
+        <a href="index.html">HOME</a>
+        <a href="shop.html">SHOP</a>
+        <a href="about.html">ABOUT US</a>
+      </div>
+
+      <p class="history">
+        We crave only good keeping and love. No cheating, no hating. Good vibes
+        only. No tolerance for stealing niggas and lazy bitches.
+        <br />
+        <br />
+        With Love and Caring.
+      </p>
+
+      <div class="icons">
+        <a href="link.html" target="_blank"
+          ><i class="fab fa-instagram-square"></i
+        ></a>
+        <a href="link.html" target="_blank"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a href="link.html" target="_blank"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+        <a href="link.html" target="_blank"
+          ><i class="fab fa-pinterest-square"></i
+        ></a>
+        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"
+          ><i class="fab fa-youtube-square"></i
+        ></a>
+      </div>
+
+      <hr
+        style="
+          height: 1px;
+          border: 0;
+          border-top: 2px white solid;
+          width: 88%;
+          margin: 28px 0 0px 6%;
+        "
+      />
+
+      <div class="konec">
+        <p id="bir">
+          &copy; sheepaship <br />
+          with love and caring.
+        </p>
+
+        <hr />
+        <p id="eki">
+          We Are sheepaship. <br />
+          Made in Aktau, Qazaqstan.
+        </p>
+
+        <hr />
+        <p id="ush">
+          2010 <br />
+          for web programming project
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      var navLinks = document.getElementById("list");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
